@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ddd;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 20px;
+  width: 100%;
+}
+
+.card {
+  max-width: 380px;
+  margin: auto;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.card-bg {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: url("bg.png") center / cover no-repeat;
+}
+
+.play-btn {
+  position: absolute;
+  bottom: 110px;          /* NAIKKAN button */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  
+  background: #FFD84D;
+  color: #fff;
+  font-size: 30px;
+
+  border: 5px solid #fff;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.45);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.play-btn:active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+
+@media (max-height: 700px) {
+  .play-btn {
+    bottom: 90px;
+  }
+}
